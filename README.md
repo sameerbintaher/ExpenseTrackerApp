@@ -5,6 +5,7 @@ A modern React Native expense tracking application built with Expo, featuring be
 ## ✨ Features
 
 ### 📊 **Dashboard**
+
 - Interactive pie chart showing expense distribution by category
 - Total expenses and monthly spending summary
 - Category breakdown with percentages and color indicators
@@ -12,6 +13,7 @@ A modern React Native expense tracking application built with Expo, featuring be
 - Light/Dark mode toggle
 
 ### ➕ **Add Expenses**
+
 - Clean form interface with validation
 - Category selection (Food, Transport, Shopping, Others)
 - Date picker with current date pre-filled
@@ -19,6 +21,7 @@ A modern React Native expense tracking application built with Expo, featuring be
 - Keyboard-aware scrolling for better UX
 
 ### 📋 **Expense List**
+
 - Scrollable list of all expenses
 - Color-coded category badges
 - Pull-to-refresh functionality
@@ -26,6 +29,7 @@ A modern React Native expense tracking application built with Expo, featuring be
 - Dummy data loaded automatically when no expenses exist
 
 ### 🌙 **Theme Support**
+
 - Light and Dark mode with system preference detection
 - Theme preferences saved locally
 - Consistent theming across all screens
@@ -48,16 +52,16 @@ A modern React Native expense tracking application built with Expo, featuring be
       <td align="center">
         <img src="./assets/dashboard-1.PNG" width="200" alt="Dashboard Light Mode"/>
         <br/>
-        <b>Dashboard - Light Mode</b>
+        <b>Dashboard - 1</b>
         <br/>
         <em>Expense summary & pie chart</em>
       </td>
       <td align="center">
         <img src="./assets/dashboard-2.PNG" width="200" alt="Dashboard Dark Mode"/>
         <br/>
-        <b>Dashboard - Dark Mode</b>
+        <b>Dashboard - 2</b>
         <br/>
-        <em>Beautiful dark theme</em>
+        <em>Category breakdown and recent activity</em>
       </td>
       <td align="center">
         <img src="./assets/add-expense.PNG" width="200" alt="Add Expense Screen"/>
@@ -80,6 +84,7 @@ A modern React Native expense tracking application built with Expo, featuring be
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - npm or yarn
 - Expo CLI
@@ -89,17 +94,20 @@ A modern React Native expense tracking application built with Expo, featuring be
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd ExpenseTrackerApp
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npx expo start
    ```
@@ -113,6 +121,7 @@ A modern React Native expense tracking application built with Expo, featuring be
 ## 📦 Dependencies
 
 ### Core Dependencies
+
 ```json
 {
   "@react-navigation/bottom-tabs": "^6.x.x",
@@ -149,6 +158,7 @@ ExpenseTrackerApp/
 ## 💾 Data Structure
 
 ### Expense Object
+
 ```javascript
 {
   id: "unique-timestamp-id",
@@ -161,6 +171,7 @@ ExpenseTrackerApp/
 ```
 
 ### Storage
+
 - Expenses are stored locally using AsyncStorage
 - Theme preferences are persisted across app restarts
 - Dummy data is automatically loaded for new users
@@ -168,12 +179,14 @@ ExpenseTrackerApp/
 ## 🎨 Theming
 
 The app supports both light and dark themes with:
+
 - **Dynamic Colors**: All components adapt to the current theme
 - **Category Colors**: Consistent color coding for expense categories
 - **System Integration**: Respects system theme preferences
 - **Manual Toggle**: Users can manually switch themes
 
 ### Theme Colors
+
 ```javascript
 // Light Mode
 colors: {
@@ -202,17 +215,21 @@ colors: {
 ## 🔧 Configuration
 
 ### Customizing Categories
+
 Edit the `CATEGORIES` array in `AddExpenseScreen.js`:
+
 ```javascript
-const CATEGORIES = ['Food', 'Transport', 'Shopping', 'Others'];
+const CATEGORIES = ["Food", "Transport", "Shopping", "Others"];
 ```
 
 ### Modifying Colors
+
 Update theme colors in `src/context/ThemeContext.js`:
+
 ```javascript
 const lightColors = {
-  categoryFood: '#ef4444',
-  categoryTransport: '#3b82f6',
+  categoryFood: "#ef4444",
+  categoryTransport: "#3b82f6",
   // ... other colors
 };
 ```
@@ -222,17 +239,20 @@ const lightColors = {
 ### Common Issues
 
 1. **Metro bundler cache issues**
+
    ```bash
    npx expo start --clear
    ```
 
 2. **Module resolution errors**
+
    ```bash
    rm -rf node_modules
    npm install
    ```
 
 3. **iOS simulator not opening**
+
    - Ensure Xcode is installed
    - Check iOS simulator is available
 
@@ -262,6 +282,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you encounter any issues or have questions:
+
 1. Check the troubleshooting section
 2. Search existing issues
 3. Create a new issue with detailed information
