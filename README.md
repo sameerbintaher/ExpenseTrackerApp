@@ -42,15 +42,21 @@ A modern React Native expense tracking application built with Expo, featuring be
 
 ## 📱 Screenshots
 
-### Light Mode
-- Dashboard with pie chart and expense summary
-- Clean form interface for adding expenses
-- Organized expense list with category badges
+### Dashboard - Light Mode
+![Dashboard Light Mode](./assets/dashboard-1.PNG)
+*Dashboard showing expense summary, pie chart visualization, and category breakdown in light theme*
 
-### Dark Mode
-- Beautiful dark theme with proper contrast
-- Theme-aware charts and components
-- Consistent dark mode experience
+### Dashboard - Dark Mode  
+![Dashboard Dark Mode](./assets/dashboard-2.PNG)
+*Dashboard with beautiful dark theme, theme toggle button, and consistent dark mode styling*
+
+### Add Expense Screen
+![Add Expense](./assets/add-expense.PNG)
+*Clean expense form with category selection, date picker, and validation*
+
+### Expense List Screen
+![Expense List](./assets/expenses.PNG)
+*Scrollable expense list with color-coded category badges and pull-to-refresh functionality*
 
 ## 🚀 Getting Started
 
